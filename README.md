@@ -1,16 +1,12 @@
-# ai_email_sorter
-
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- I can “Sign in with Google” via OAuth
+- It asks for scopes related to email (This will be a dev app, on Google, you’ll need to add my Gmail as a test user in order for me to use the app because in order for apps with email scopes to be approved you have to do a security review which takes weeks. I’ll give you my Gmail if you submit a working app.)
+- It shows me a page with 3 sections:
+    - A way to connect other Gmail accounts so this works across multiple inboxes
+    - A list of my custom categories
+    - A button to add a new category
+- When I add a new category, it has a form where I can give the category a name and a description
+- [When new emails come in, it imports them into the app into the right category using AI and the category descriptioncomp](https://www.notion.so/1635ee0c36548048a1dfde394b86e554?pvs=21)
+- After importing a new email, it archives (not deletes) it on Gmail
+- When I click on a category in the app, it shows me all the emails imported to that category. Each email has an AI-summarized description. I can select specific emails or select all emails and either delete them or unsubscribe.
+- If I select emails and click unsubscribe, it should look through each email for an “unsubscribe” link and act like an AI agent to go to that page and unsubscribe (filling out any form necessary, toggling the right selects, etc.)
+- If I click on an email, I can read the original contents.
